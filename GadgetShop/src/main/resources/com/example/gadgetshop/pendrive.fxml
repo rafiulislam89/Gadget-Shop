@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gadgetshop.pendriveController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true">
+         <image>
+            <Image url="@interface.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="333.0" layoutY="31.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" style="-fx-border-color: #000000; -fx-background-color: #2f777a; -fx-border-width: 3;" text="Pendrive">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="21.0" layoutY="31.0" mnemonicParsing="false" onAction="#home" prefHeight="35.0" prefWidth="104.0" style="-fx-background-color: #2f777a;" text="Home">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="229.0" layoutY="31.0" mnemonicParsing="false" onAction="#charger" prefHeight="35.0" prefWidth="104.0" style="-fx-background-color: #2f777a;" text="Charger">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="125.0" layoutY="31.0" mnemonicParsing="false" onAction="#headphone" prefHeight="35.0" prefWidth="104.0" style="-fx-background-color: #2f777a;" text="Headphone">
+         <font>
+            <Font name="Bell MT Bold" size="15.0" />
+         </font>
+      </Button>
+      <Line endX="789.9999389648438" endY="3.814697265625E-6" layoutX="113.0" layoutY="66.0" startX="-117.90000915527344" startY="3.814697265625E-6" strokeWidth="5.0" />
+      <TableView fx:id="itemTableView" layoutX="121.0" layoutY="98.0" prefHeight="471.0" prefWidth="656.0" style="-fx-background-color: #2f777a;">
+         <columns>
+            <TableColumn fx:id="columnName" prefWidth="350.39998626708984" style="-fx-alignment: center;" text="Pendrive Name" />
+            <TableColumn fx:id="columnQuantity" prefWidth="150.40005493164062" style="-fx-alignment: center;" text="Quantity" />
+            <TableColumn fx:id="columnPrice" prefWidth="150.40005493164062" style="-fx-alignment: center;" text="Price" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>
